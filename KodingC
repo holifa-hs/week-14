@@ -1,1 +1,134 @@
-njajal
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+
+int main(){
+
+    double numberOne, numberTwo;
+    char key;
+    do{
+    cout << "           Selamat Datang di Kalkulator Pintar!\n          Silakan pilih opsi yang Anda inginkan \n\n"
+         << "========================================================\n\n"
+         << "Opsi:\n"
+         << "- Restart         [R]\n"
+         << "- Penjumlahan     [1]\n"
+         << "- Pengurangan     [2]\n"
+         << "- Perkalian       [3]\n"
+         << "- Pembagian       [4]\n"
+         << "- Modulator       [5]\n"
+         << "- Cosinus         [6]\n"
+         << "- Sinus           [7]\n"
+         << "- Tangen          [8]\n"
+         << "- Akar Kuadrat    [9]\n"
+         << "- Perpangkatan    [0]\n"
+         << "Keluar [K]\n\n";
+    cin >> key;
+
+    switch (key){
+        case 'c':
+            cout << "\n\n\n\n\n\n\n";
+            break;
+
+        case '1':
+            cout << "Masukkan angka pertama :\n";
+            cin >> numberOne;
+            cout << "Masukkan angka kedua :\n";
+            cin >> numberTwo;
+            cout << "Hasil :\n";
+            cout << numberOne+numberTwo;
+            cout << "\n\n\n";
+            break;
+
+        case '2':
+            cout << "Masukkan angka pertama :\n";
+            cin >> numberOne;
+            cout << "Masukkan angka kedua :\n";
+            cin >> numberTwo;
+            cout << "Hasil :\n";
+            cout << numberOne-numberTwo;
+            cout << "\n\n\n";
+            break;
+
+        case '3':
+            cout << "Masukkan angka pertama :\n";
+            cin >> numberOne;
+            cout << "Masukkan angka kedua :\n";
+            cin >> numberTwo;
+            cout << "Hasil :\n";
+            cout << numberOne*numberTwo;
+            cout << "\n\n\n";
+            break;
+
+        case '4':
+            cout << "Masukkan angka pertama :\n";
+            cin >> numberOne;
+            cout << "Masukkan angka kedua :\n";
+            cin >> numberTwo;
+            cout << "Hasil :\n";
+            cout << numberOne/numberTwo;
+            cout << "\n\n\n";
+            break;
+
+        case '5':
+            cout << "Masukkan angka pertama :\n";
+            cin >> numberOne;
+            cout << "Masukkan angka kedua :\n";
+            cin >> numberTwo;
+            cout << "Hasil :\n";
+            cout << int(numberOne)%int(numberTwo);
+            cout << "\n\n\n";
+            break;
+
+        case '6':
+            cout << "Masukkan nilai cosinus yang ingin dicari :\n";
+            cin >> numberOne;
+            cout << "Hasil :\n";
+            cout << cos(numberOne);
+            cout << "\n\n\n";
+            break;
+
+        case '7':
+            cout << "Masukkan nilai sinus yang ingin dicari :\n";
+            cin >> numberOne;
+            cout << "Hasil :\n";
+            cout << sin(numberOne);
+            cout << "\n\n\n";
+            break;
+
+        case '8':
+            cout << "Masukkan nilai tangen yang ingin dicari :\n";
+            cin >> numberOne;
+            cout << "Hasil :\n";
+            cout << tan(numberOne);
+            cout << "\n\n\n";
+            break;
+
+        case '9':
+            cout << "Masukkan nilai akar kuadrat yang ingin dicari :\n";
+            cin >> numberOne;
+            cout << "Hasil :\n";
+            cout << sqrt(numberOne);
+            cout << "\n\n\n";
+            break;
+
+        case '0':
+            cout << "Masukkan angka pertama :\n";
+            cin >> numberOne;
+            cout << "Masukkan angka yang ingin dijadikan pangkat :\n";
+            cin >> numberTwo;
+            cout << "Hasil :\n";
+            cout << pow(numberOne, numberTwo);
+            cout << "\n\n\n";
+            break;
+        
+    }
+    }
+    while (key < 0 || key > 9 && key != 'q');
+    if (key == 'q')exit (1);
+
+
+
+return 0;
+}
