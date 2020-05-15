@@ -7,7 +7,6 @@ int main ()
 {
      int paket;
      double numberOne,numberTwo;
-     char key;
      cout << " ******************************************"<<endl;
      cout << "  | SELAMAT DATANG DI KALKULATOR PINTAR |" <<endl;
      cout << " ******************************************"<<endl;
@@ -16,21 +15,16 @@ int main ()
      cout << " 2. Pengurangan" <<endl;
      cout << " 3. Perkalian" <<endl;
      cout << " 4. Pembagian" <<endl;
-     cout << " 5. Cosinus" <<endl;
-     cout << " 6. Sinus" <<endl;
-     cout << " 7. Tangen" <<endl;
-     cout << " 8. Akar Kuadrat" <<endl;
-     cout << " 9. Perpangkatan" <<endl;
-     cout << " 0. Modulator" <<endl;
+     cout << " 5. Modulator" <<endl;
+     cout << " 6. Cosinus" <<endl;
+     cout << " 7. Sinus" <<endl;
+     cout << " 8. Tangen" <<endl;
+     cout << " 9. Akar Kuadrat" <<endl;
+     cout << " 0. Perpangkatan" <<endl;
      cout << " "<<endl;
      cout << " =================================================="<<endl;
      cout<<" "<<endl;
      
-     switch (key){
-     case 'c':
-     cout << "\n\n\n\n\n\n\n";
-     break;
-     }
      cout << " Masukkan opsi : ";
      cin>> paket ;
      if (paket==1)
@@ -75,13 +69,23 @@ int main ()
      }
      else if (paket==5)
      {
+         cout << "Masukkan angka pertama :\n";
+         cin >> numberOne;
+         cout << "Masukkan angka kedua :\n";
+         cin >> numberTwo;
+         cout << "Hasil :\n";
+         cout << int(numberOne)%int(numberTwo);
+         cout << "\n\n\n";
+     }
+     else if (paket==6)
+     {
         cout << "Masukkan nilai cosinus yang ingin dicari :\n";
         cin >> numberOne;
         cout << "Hasil :\n";
         cout << cos(numberOne);
         cout << "\n\n\n";
      }
-     else if (paket==6)
+     else if (paket==7)
      {
         cout << "Masukkan nilai sinus yang ingin dicari :\n";
         cin >> numberOne;
@@ -89,7 +93,7 @@ int main ()
         cout << sin(numberOne);
         cout << "\n\n\n";
      }
-     else if (paket==7)
+     else if (paket==8)
      {
         cout << "Masukkan nilai tangen yang ingin dicari :\n";
         cin >> numberOne;
@@ -97,7 +101,7 @@ int main ()
         cout << tan(numberOne);
         cout << "\n\n\n";
      }
-     else if (paket==8)
+     else if (paket==9)
      {
         cout << "Masukkan nilai akar kuadrat yang ingin dicari :\n";
         cin >> numberOne;
@@ -105,7 +109,7 @@ int main ()
         cout << sqrt(numberOne);
         cout << "\n\n\n";
      }
-     else if (paket==9)
+     else if (paket==0)
      {
         cout << "Masukkan angka pertama :\n";
         cin >> numberOne;
